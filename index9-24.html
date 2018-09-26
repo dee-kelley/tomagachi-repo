@@ -6,28 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tomagachi</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css" media="screen" title="Tomagachi" charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css" title="Tomagachi" charset="utf-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.min.js"></script>
 </head>
 <body>
     <div id="container">
         <header>
             <h1>Tomagotcha</h1>
-                <!--<button class="start">Start</button> onclick="msg()" -->
+            <h2 id="notice">Notice me, senpai!</h2>
+            <h3 id="pic"></h3>
+            <h4 class="name"></h4>
+            <!-- <input type="text" placeholder="NAME ME"> -->
+            <!-- <button>add</button> -->
+                <!-- <button class="start">Start</button>  -->
                 <!--<input type="button" value="Female"> onclick="msg()" -->
 
         </header>
     <div id="col-1">
-        <button class="feed">Feed</button>
+        <button class="feed">Feed Me!</button>
      </div>
     <div id="col-2">
-        <button class="sleep">Sleep</button>
+        <button class="sleep">Let Me Sleep</button>
         </div>
     <div id="col-3">
-            <button class="play">Play With</button>
+        <button class="play">Play With Me!</button>
         </div>
 
+        <!-- <button class="music">Play Audio</button> -->
+        <button class="music">Play Audio</button>
 
+<div class="container">
+<div class="stats">
+    <div>Hunger
+        <span class="hunger"></span>
+    </div>
+    <div>Boredom
+        <span class="bored"></span>
+    </div>
+    <div>Sleepiness
+        <span class="sleepy"></span>
+    </div>
+    <div>Age
+        <span class="age"></span>
+    </div>
+</div>
+</div>
    
         <script src="javascrip9-24/app9-24.js"></script>
     </div>
