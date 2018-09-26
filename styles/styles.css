@@ -14,7 +14,47 @@ html, body {
     padding: 1%;
   
   }
+  #notice{
+      font-size: 25px;
+      color: darkred
+  }
+
+  .title {
+      color: crimson
+
+  }
+
+  .name{
+    font-size: 30px;
+    font-style: oblique;
+    color: blueviolet  
+  }
+
+  .feed {
+      width: 150px;
+      height: 50;
+      font-size: 20px;
+      color: blue
+  }
+
+  .sleep {
+    width: 150px;
+    height: 50;
+    font-size: 20px;
+    color: red
+  }
   
+  .play {
+    width: 150px;
+    height: 50;
+    font-size: 20px;
+    margin-right: 10px;
+    color: purple
+  }
+  .music{
+      color: orangered
+  }
+
   .stats {
       margin: right;
   }

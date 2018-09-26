@@ -115,8 +115,10 @@ const timePassingAge = setInterval (()=>{
     pet.alive = false;
     alert(`YOU LET ${naming} DIE`);
     $('#pic > img').remove();
-    $('header').append('<img src = "https://im5.ezgif.com/tmp/ezgif-5-2253463451.gif"></img>');
-        clearInterval(timePassingAge);
+    $('header').append('<img src = "https://media.giphy.com/media/5kFVk4thXEW7FzTEYx/giphy.gif"></img>');
+        $('.title').replaceWith("MURDER MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE")
+    $('#notice').replaceWith("SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x")
+    clearInterval(timePassingAge);
         clearInterval(timePassingPlay);
         clearInterval(timePassingSleep);
         clearInterval(timePassingFeed);
