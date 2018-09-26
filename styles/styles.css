@@ -24,11 +24,12 @@ html, body {
 
   }
 
-  .name{
+  .name, .nameTwo {
     font-size: 30px;
     font-style: oblique;
     color: blueviolet  
   }
+
 
   .feed {
       width: 150px;

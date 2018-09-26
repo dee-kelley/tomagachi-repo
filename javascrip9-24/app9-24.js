@@ -118,6 +118,7 @@ const timePassingAge = setInterval (()=>{
     $('header').append('<img src = "https://media.giphy.com/media/5kFVk4thXEW7FzTEYx/giphy.gif"></img>');
         $('.title').replaceWith("MURDER MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE")
     $('#notice').replaceWith("SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x")
+    $('.name').replaceWith(`<h4 class="nameTwo">HERE LIES ${naming}</h4>`)
     clearInterval(timePassingAge);
         clearInterval(timePassingPlay);
         clearInterval(timePassingSleep);
