@@ -8,7 +8,9 @@ html, body {
   body {
     font-family: 'Roboto Condensed', sans-serif;
     background-image: url('https://orig00.deviantart.net/f7fc/f/2018/261/8/1/bongo_blake__animated__by_leonardofrei-dcn704z.gif');
+    background-size: cover
   }
+
   header {
     text-align: center;
     padding: 1%;
@@ -16,41 +18,56 @@ html, body {
   }
   #notice{
       font-size: 25px;
-      color: darkred
+      color: darkred;
+      text-shadow: 2px 2px #b8b8b8;
   }
 
   .title {
-      color: crimson
+      color: crimson;
+      text-shadow: 2px 2px #b8b8b8;
 
   }
 
   .name, .nameTwo {
     font-size: 30px;
     font-style: oblique;
-    color: blueviolet  
+    color: blueviolet;
+    text-shadow: 2px 2px #000000;
   }
-
-
+  .feed:hover{
+      background-color: beige
+  }
   .feed {
       width: 150px;
       height: 50;
       font-size: 20px;
-      color: blue
+      color: blue;
+      background-color: aliceblue
+  }
+  .sleep:hover{
+      background-color: beige;
+      shape-outside: circle()
   }
 
   .sleep {
     width: 150px;
     height: 50;
     font-size: 20px;
-    color: red
+    color: red;
+    background-color: peachpuff
   }
   
+  .play:hover{
+      background-color: beige
+  }
   .play {
     width: 150px;
     height: 50;
     font-size: 20px;
     margin-right: 10px;
-    color: purple
+    color: purple;
+    background-color: pink
+
   }
   .music{
       color: orangered

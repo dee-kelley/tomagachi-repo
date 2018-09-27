@@ -1,4 +1,3 @@
-$(document).ready()
 // global variable
 //===================================================
 let seconds = 0;
@@ -6,7 +5,7 @@ let seconds = 0;
 // let bored = 0;
 // let sleepy = 0;
 // let old = 0;
-let $body = $('body');
+const $body = $('body');
 
 //=====================================================
 
@@ -15,11 +14,11 @@ let $body = $('body');
 //     music.play(); 
 
 // } 
-const fuckinA = $('<audio autoplay controls id="myAudio"> <source src="Mortal-Kombat.mp3"></audio>');
-$(document).on('click', ".music", function(){
-    $body.append(fuckinA)
-    $('.music').remove();
-});
+// const fuckinA = $('<audio autoplay controls id="myAudio"> <source src="Mortal-Kombat.mp3"></audio>');
+// $(document).on('click', ".music", function(){
+//     $body.append(fuckinA)
+//     $('.music').remove();
+// });
 
 //==================================================
 //window.alert("Toma-GOTCHA NOW BITCH")
@@ -88,14 +87,8 @@ const timePassingPlay = setInterval (()=>{
     if(seconds%5 ===0){
         pet.bored++
         $('.bored').text(pet.bored)
-        //div displaying score.html(pet.bored)
         console.log(pet.bored)
         }}, 1000)
-    //  else if(pet.bored == 10){
-    //     pet.alive = false;
-    // clearInterval(timePassingPlay);
-    //     }
-
 
 const timePassingAge = setInterval (()=>{
     if(seconds%3 === 0){
@@ -107,7 +100,7 @@ const timePassingAge = setInterval (()=>{
         $('#pic > img').remove();
         $('#pic').append('<img src = "https://pa1.narvii.com/6597/d64a6d75fc3e31854691fe5c3a53bff8b6c424db_hq.gif"></img>');
     } if(seconds === 10){
-        alert(`${naming} IS EVOLVING AGEEEEEEN!`)
+        alert(`${naming} IS EVOLVING AGAAAIIIIIN!`)
         $('#pic > img').remove();
         $('#pic').append('<img src = "https://pa1.narvii.com/6437/9f8771e4760bed80cef05e19eb145393e4bdea00_128.gif"></img>');
     
@@ -116,7 +109,7 @@ const timePassingAge = setInterval (()=>{
     alert(`YOU LET ${naming} DIE`);
     $('#pic > img').remove();
     $('header').append('<img src = "https://media.giphy.com/media/5kFVk4thXEW7FzTEYx/giphy.gif"></img>');
-        $('.title').replaceWith("MURDER MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE")
+        $('.title').replaceWith("MURDER MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE")
     $('#notice').replaceWith("SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x SENPAI NOTICED ME  x_x")
     $('.name').replaceWith(`<h4 class="nameTwo">HERE LIES ${naming}</h4>`)
     clearInterval(timePassingAge);
@@ -127,46 +120,49 @@ const timePassingAge = setInterval (()=>{
     }
 }, 1000);
 
-
-// $('button').on('click', () => {
-//     const $input = $('input').val();
-//     console.log($input);
-//   });
-
-
-
-$(document).on('click', ".feed", function() {
+$('.feed').on('click', ()=> { 
+    pet.hungry-= 2;
     console.log(`THIS IS HUNGRY ${pet.hungry}`);
 	if (pet.hungry <= 1 ) {                                         //|| this.sleepy <= 1
         alert(`I'm full, Kevin Spacey!`);
         return
 	}
-    pet.hungry-= 2;
+   
         console.log(pet.hungry)
 		// updateTamagotchi();
 });
-$(document).on('click', ".sleep", function() {
+
+$('.sleep').on('click', ()=> {
+    pet.sleepy-= 1;
     console.log(`CLICKED WORKED ${pet.sleepy}`);
 	if (pet.sleepy <= 1) {                                      //pet.hungry <= 1 || 
 		alert(`I am awake, baka!`);
 		return
 	}
-    pet.sleepy-= 1;
+    
     //jquery to update page =======================================================
 
         console.log(pet.sleepy)
 		// updateTamagotchi();
 });
-$(document).on('click', ".play", function() {
+$('.play').on('click', ()=> {
+    pet.bored-= 1;
     console.log(`THIS IS BORED ${pet.bored}`);
 	if (pet.bored <= 1) {                                               //pet.hungry <= 1 || 
 		alert(`That was fun, senpai!`);
 		return
-	}
-    pet.bored-= 1;
+	
+}
         console.log(pet.bored)
 		// updateTamagotchi();
 });
+
+//.attr(the source thing you want to change, what you are changing it to)
+
+// $('button').on('click', () => {
+//     const $input = $('input').val();
+//     console.log($input);
+//   });
 
 // $(document).on('click', ".age", function() {
 //     console.log(`THIS IS AGE ${pet.age}`)
